@@ -7,26 +7,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="header">
-      <div class="logo">
-        <div class="logo_text" tabindex="1">Dropdown</div>
-      </div>
-      <div class="nav_items">
-        <ul class="list_items_parent">
-          <li class="list_item" tabindex="2">Home</li>
-          <li class="list_item" tabindex="3">About</li>
-          <li class="list_item" tabindex="4" id="teams">
-            <span> Teams</span>
-            <ul class="child_list_items">
-              <li tabindex="5">Team 1</li>
-              <li tabindex="6">Team 2</li>
-              <li tabindex="7">Team 3</li>
+    <header role="menubar" class="header">
+      <section class="logo">
+        <h3 class="logo_text" tabindex="1">Dropdown</h3>
+      </section>
+      <nav role="navigation" class="nav_items">
+        <ul role="menu" class="list_items_parent">
+          <li role="menuitem" class="list_item" tabindex="2">Home</li>
+          <li role="menuitem" class="list_item" tabindex="3">About</li>
+          <li role="menuitem" class="list_item" tabindex="4" id="teams">
+            Teams
+            <ul role="list" class="child_list_items">
+              <li role="listitem" tabindex="5">Team 1</li>
+              <li role="listitem" tabindex="6">Team 2</li>
+              <li role="listitem" tabindex="7">Team 3</li>
             </ul>
           </li>
-          <li class="list_item" tabindex="8">Contacts</li>
+          <li role="menuitem" class="list_item" tabindex="8">Contacts</li>
         </ul>
-      </div>
-    </div>
+      </nav>
+    </header>
   </body>
   <script src="index.js"></script>
 </html>
